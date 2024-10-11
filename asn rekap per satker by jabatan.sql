@@ -11,7 +11,7 @@ select * from
 PIVOT
 (
 	--sum(jumlah) for level_jabatan in ([guru],[dosen],[asesor sdm aparatur])
-	sum(jumlah) for level_jabatan in ([Jabatan Fungsional Umum],[Jabatan Pelaksana])
+	sum(jumlah) for level_jabatan in ([Jabatan Fungsional Umum],[Jabatan Pelaksana],[Eselon I.a],[Eselon I.b],[Guru],[Perencana])
 ) piv
 order by kode_satuan_kerja
 
@@ -20,7 +20,8 @@ order by kode_satuan_kerja
 --select * from TM_JABATAN
 --SELECT * FROM TEMP_PEGAWAI_SSO WHERE TAMBAH_PEGAWAI=1
 --select * from TM_TUKIN
-update [TM_PEGAWAI] set KODE_STATUS_PEGAWAI=1 where KODE_STATUS_PEGAWAI=2 and KODE_MUTASI=1 and YEAR(MASUK_PEGAWAI)<2021
+
+--update [TM_PEGAWAI] set KODE_STATUS_PEGAWAI=1 where KODE_STATUS_PEGAWAI=2 and KODE_MUTASI=1 and YEAR(MASUK_PEGAWAI)<2021
 select * from TM_STATUS_PEGAWAI
 select * from TM_REF
 
