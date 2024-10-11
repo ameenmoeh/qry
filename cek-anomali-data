@@ -1,0 +1,3 @@
+--select * from vwDATA_PEGAWAI WHERE kode_mutasi='1' and status_pegawai='-'
+--select top 100 * from vwDATA_PEGAWAI where kode_mutasi='1' and KODE_LEVEL_JABATAN='201' and KODE_SATUAN_KERJA not LIKE '02%'
+SELECT * from TM_LEVEL_JABATAN
